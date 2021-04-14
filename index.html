@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulário Login</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="inicio">
+      <h1 id="title">cadastre-se aqui</h1>
+      <p id="subtitle">Adicione suas informações</p>
+    </div>
+
+    <form action="#">
+      <!-- fieldset é um agrupador de campos -->
+      <fieldset class="parte1">
+        <div class="parte2">
+          <label for="nome"><strong>Nome:</strong></label>
+          <input type="text" name="nome" id="nome" />
+        </div>
+        <div class="parte2">
+          <label for="sobrenome"><strong>Sobrenome:</strong></label>
+          <input type="text" name="Sobrenome" id="Sobrenome" />
+        </div>
+      </fieldset>
+      <div class="parte2">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="parte2">
+        <!-- devweb é utilizado para desenvolvimento web de sites -->
+        <label><strong>Qual seu genero?</strong></label>
+        <label>
+          <input type="radio" name="devweb" value="masculino" />masculino
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="feminino" />feminino
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="indefinido" />indefinido
+        </label>
+      </div>
+
+      <div>
+        <!-- select disabled value selecionei, disativei ele e adicionei um valor -->
+        <label for="sua idade"><strong>sua idade:</strong></label>
+        <select id="sua idade">
+          <option selected disabled value="#">selecione</option>
+          <option>15-18</option>
+          <option>19-25</option>
+          <option>26-31</option>
+          <option>32-80</option>
+        </select>
+      </div>
+      <br /><br />
+      <!-- checkbox é uma caixar para selecionar -->
+      <!-- for é para selecionar o passa tempo de acordo -->
+      <fieldset class="parte1">
+        <div id="checkbox">
+          <label><strong>seus passa tempo:</strong></label>
+          <input
+            type="checkbox"
+            id="passa tempo1"
+            name="passa tempo1"
+            value="programar"
+          />
+          <label for="passa tempo1">programar</label>
+          <input
+            type="checkbox"
+            id="passa tempo2"
+            name="passa tempo2"
+            value="series e filmes"
+          />
+          <label for="passa tempo2">series e filmes</label>
+          <input
+            type="checkbox"
+            id="passa tempo3"
+            name="passa tempo3"
+            value="atividades fisicas"
+          />
+          <label for="passa tempo3">atividades fisicas</label>
+          <input
+            type="checkbox"
+            id="passa tempo4"
+            name="passa tempo4"
+            value="comer chocolate"
+          />
+          <label for="passa tempo4">comer chocolate</label>
+        </div>
+      </fieldset>
+
+      <button class="botao" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
